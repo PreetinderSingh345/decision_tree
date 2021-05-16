@@ -1,0 +1,81 @@
+// Decision Tree
+digraph {
+	A [label="setosa = 37
+versicolor = 34
+virginica = 41
+entropy = 1.581
+gain ratio = 1.000
+petal length (cm) (<=2.600)
+"]
+	B [label="setosa = 37
+entropy = 0.000
+setosa
+"]
+	C [label="versicolor = 34
+virginica = 41
+entropy = 0.994
+gain ratio = 0.661
+petal width (cm) (<=1.650)
+"]
+	D [label="versicolor = 33
+virginica = 4
+entropy = 0.494
+gain ratio = 0.511
+sepal length (cm) (<=7.100)
+"]
+	E [label="versicolor = 33
+virginica = 3
+entropy = 0.414
+gain ratio = 0.065
+sepal width (cm) (<=2.850)
+"]
+	F [label="versicolor = 19
+virginica = 3
+entropy = 0.575
+versicolor
+"]
+	G [label="versicolor = 14
+entropy = 0.000
+versicolor
+"]
+	H [label="virginica = 1
+entropy = 0.000
+virginica
+"]
+	I [label="versicolor = 1
+virginica = 37
+entropy = 0.176
+gain ratio = 0.097
+sepal length (cm) (<=5.950)
+"]
+	J [label="versicolor = 1
+virginica = 6
+entropy = 0.592
+gain ratio = 1.000
+sepal width (cm) (<=3.100)
+"]
+	K [label="virginica = 6
+entropy = 0.000
+virginica
+"]
+	L [label="versicolor = 1
+entropy = 0.000
+versicolor
+"]
+	M [label="virginica = 31
+entropy = 0.000
+virginica
+"]
+	A -> B
+	A -> C
+	C -> D
+	D -> E
+	E -> F
+	E -> G
+	D -> H
+	C -> I
+	I -> J
+	J -> K
+	J -> L
+	I -> M
+}
